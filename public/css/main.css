@@ -1,0 +1,396 @@
+@font-face {
+font-family: "cimeroPro";
+src: url("../fonts/cimeroPro/CimeroPro.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #232323;
+}
+
+/*section {
+    padding-left: 10px;
+}*/
+
+.bg_side_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background: #040b14;
+    padding: 10px 20px;
+    width: 300px;
+    color: white;
+    text-decoration: none;
+}
+
+.bg_side_bar a {
+    transition: .5s;
+    color: #a8a9b4;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 18px;
+
+}
+
+.bg_side_bar a i {
+    padding-right: 10px;
+}
+
+.bg_side_bar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.bg_side_bar a:hover i {
+    transition: .5s;
+    color: #149ddd;
+}
+
+.bg_side_bar li {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.bg_side_bar ul {
+    padding-left: 10px;
+}
+
+.wrapper{
+    margin-left: 300px;
+}
+
+.wrapper:before {
+    content: "";
+    background-color: rgb(90 112 147 / 30%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.site_name {
+    color: white;
+    font-size: 24px;
+}
+
+#home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo_wrap {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 168px;
+    width: 168px;
+    border: 8px solid;
+    color: #3f3c3c;
+    margin: 15px auto;
+    display: block;
+}
+
+.home_photo img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.name_and_profession {
+    z-index: 2;
+    color: white;
+    font-size: 32px;
+    width: 100%;
+    padding-left: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.section-title {
+    padding-bottom: 30px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.img_about {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+.section-title h2 {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    left: 0;
+    bottom: 0;
+}
+
+.about {
+    padding: 20px 20px 0px 10px;
+}
+
+.dark-background {
+    background-color: #f4fafd;
+}
+
+#resume {
+    padding-bottom: 40px;
+}
+
+.resume {
+    padding: 40px 20px 0px 10px;
+    margin-top: 60px;
+}
+
+.resume h3 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.resume h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #4f5355;
+}
+
+.resume-item {
+    position: relative;
+    border-left: 2px solid #149ddd;
+    padding: 0 0 20px 20px;
+}
+
+.resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item p {
+    font-size: 1.2rem;
+}
+
+#portfolio {
+    margin-bottom: 500px;
+}
+
+.info-wrap {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    height: 100%;
+}
+
+.info-item i {
+    font-size: 20px;
+    color: #149ddd;
+    background: #edf8fd;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.info-item:hover i {
+    font-size: 20px;
+    color: white;
+    background: #149ddd;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.php-email-form button[type=submit] {
+    color: #ffffff;
+    background: #149ddd;
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+.php-email-form button[type=submit]:hover {
+    background: #59b5e7;
+}
+
+.admin-login {
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black; /* Цвет обычного состояния */
+}
+
+header ul li a.active {
+    color: #ffffff; /* Цвет для активного пункта меню */
+    transition: .5s;
+}
+
+header ul li a.active i {
+    color: #149ddd;
+    transition: .5s;
+}
+
+/*Стили входа в админку*/
+.admin-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.admin-authorization {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.about ul {
+    columns: 2 ;
+    list-style-type: none ;
+    padding-left: 0;
+}
+
+.admin-about-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.fixR .row {
+    margin-bottom: 15px;
+}
+
+.fixR button {
+    margin-bottom: 30px;
+}
+
+.content li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.content .py-5 {
+    font-size: 1.2rem;
+}
+
+#formError, #formSuccess {
+    display: none;
+}
+
+.wrapMessage {
+    height: 40px;
+}
+
+/*
+#wrapModal {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .5);
+}
+#modalWindow {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background: #fff;
+    color: #000;
+    height: 200px;
+    width: 400px;
+}
+
+*/
+
+
+/* Стиль для предзагрузчика */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Скрыть контент до полной загрузки */
+#content {
+    display: none;
+}
