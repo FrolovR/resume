@@ -10,6 +10,18 @@ window.addEventListener('load', function() {
     content.style.display = 'block';
 });
 
+document.getElementById('menuButton').addEventListener('click', function() {
+    const headerContent = document.querySelector('.bg_side_bar');
+    headerContent.classList.toggle('show'); // Переключение класса show
+});
+
+$(document).ready(function() {
+    $('header ul li a').on('click', function() {
+        $('header').removeClass('show');
+    });
+});
+
+
 document.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('header ul li a');

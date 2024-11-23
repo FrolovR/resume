@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin-left: 0;
+    }
+
+    .bg_side_bar {
+        left: -100%;
+    }
+
+    #menuButton {
+        display: block;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    .about ul {
+        columns: 1;
+    }
+    .name_and_profession{
+        text-align: center;
+    }
+}

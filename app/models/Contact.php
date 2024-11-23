@@ -8,7 +8,7 @@ class Contact {
         }
 
         // Настройка email, на который отправляются данные
-        $to = 'your-email@example.com';
+        $to = 'ruslanfrolov1992@gmail.com';
         $subject = 'Новое сообщение с сайта';
 
         // Формируем сообщение

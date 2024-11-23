@@ -1,10 +1,3 @@
-@font-face {
-font-family: "cimeroPro";
-src: url("../fonts/cimeroPro/CimeroPro.otf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -27,6 +20,32 @@ body {
     width: 300px;
     color: white;
     text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+#menuButton {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 3;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    background: #7d90ad;
+    border-radius: 50%;
+}
+
+#menuButton i {
+    margin-top: 8px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+}
+
+.show {
+    display: block;
 }
 
 .bg_side_bar a {
@@ -333,34 +352,6 @@ input {
 .wrapMessage {
     height: 40px;
 }
-
-/*
-#wrapModal {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, .5);
-}
-#modalWindow {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 100;
-    background: #fff;
-    color: #000;
-    height: 200px;
-    width: 400px;
-}
-
-*/
-
 
 /* Стиль для предзагрузчика */
 #preloader {
